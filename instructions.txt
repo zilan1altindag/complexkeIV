@@ -1,0 +1,11 @@
+You have to break the protocol in order to get your flag.
+
+
+The protocol is based on the game https://morisset.gitlab.io/ispag/tutorial/ex1.html. Before you attempt to solve this challenge, it is recommended you first solve that game, as well as simplekeiv (since this protocol uses a similar encryption method) and complexke (since this protocol also uses a man in the middle attack).
+
+- There are three machines playing the protocol: A, B and S.
+- The protocol aims to let A and B exchange a secret session key and a secret message.
+
+In this protocol, the programmer decided to use AES a bit more securely, by using a proper Initialisation Vector. The resulting approach is more complex than what is used in the aes challenge or the simpleke or complexke challenge. You are provided with a code fragment that is currently used in the code to manage the encryption and decryption in crypto_fragment.php. Note that this is PHP code, and will not run directly in the command line ...
+
+As before, you are provided with a specific version of that protocol, which is deployed at a specific address, provided in the script protocol.sh which executes the protocol cleanly in the way it was meant to run. 
